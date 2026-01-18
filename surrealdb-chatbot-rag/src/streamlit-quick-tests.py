@@ -31,25 +31,25 @@
 # st.write(x, "squared is", x * x)
 
 
-import streamlit as st
+# import streamlit as st
 
-if "counter" not in st.session_state:
-    st.session_state.counter = 0
+# if "counter" not in st.session_state:
+#     st.session_state.counter = 0
 
-st.session_state.counter += 1
+# st.session_state.counter += 1
 
-st.header(f"This page has run {st.session_state.counter} times.")
+# st.header(f"This page has run {st.session_state.counter} times.")
 
-# Method 1: Using the return value (True if clicked)
-if st.button("Method 1: Click to print"):
-    st.write("Button 1 was clicked!")
-    print("Button 1 clicked")
-
-
-# # Method 2: Using a callback (runs before the script reruns)
-# def handle_click():
-#     st.session_state.counter += 10
-#     st.toast("Counter incremented by 10!")
+# # Method 1: Using the return value (True if clicked)
+# if st.button("Method 1: Click to print"):
+#     st.write("Button 1 was clicked!")
+#     print("Button 1 clicked")
 
 
-st.button("Method 2: Click to update state")
+# # # Method 2: Using a callback (runs before the script reruns)
+# # def handle_click():
+# #     st.session_state.counter += 10
+# #     st.toast("Counter incremented by 10!")
+
+
+# st.button("Method 2: Click to update state")
